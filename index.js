@@ -26,9 +26,13 @@ function validateForm(email){
         console.log('invalid email');
         submit.style.border = "1px solid red";
         error.textContent= "Whoops! It looks like you forgot to add your email";
+        error.style.color = "var(--light-red)";
+
     } else {
         console.log('invalid email');
         submit.style.border = "1px solid red";
         error.textContent = "Please provide a valid email address";
+        error.style.color = "var(--light-red)";
+
     }
 }
